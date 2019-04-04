@@ -70,11 +70,9 @@
         
         // fill the timeout menu
         self.toggleTimeouts = [[NSArray alloc] initWithObjects:
-                               [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:0], @"value", NSLocalizedString(@"timeoutNever", nil), @"name", nil],
                                [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:5], @"value", [NSString stringWithFormat:@"5 %@", NSLocalizedString(@"timeoutMins", nil)], @"name", nil],
                                [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:10], @"value", [NSString stringWithFormat:@"10 %@", NSLocalizedString(@"timeoutMins", nil)], @"name", nil],
                                [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:20], @"value", [NSString stringWithFormat:@"20 %@", NSLocalizedString(@"timeoutMins", nil)], @"name", nil],
-                               [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithInt:60], @"value", [NSString stringWithFormat:@"1 %@", NSLocalizedString(@"timeoutHour", nil)], @"name", nil],
                                nil];
         
         NSInteger timeoutValue = 20;
